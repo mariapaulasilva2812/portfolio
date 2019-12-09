@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+}
+/*TIPOGRAFÍAS*/
+@font-face{
+    font-family: Klavika_Light;
+    src: url(../fonts/Klavika_Light.otf);
+}
+@font-face{
+    font-family: Klavika_Light_Italic;
+    src: url(../fonts/Klavika_Light_Italic.otf);
+}
+@font-face{
+    font-family: Klavika_Regular;
+    src: url(../fonts/Klavika_Regular.otf);
+}
+@font-face{
+    font-family: Klavika_Medium;
+    src: url(../fonts/Klavika_Medium.otf);
+}
+@font-face{
+    font-family: Klavika_Bold;
+    src: url(../fonts/Klavika_Bold.otf);
+}
+@font-face{
+    font-family: Museo_500;
+    src: url(../fonts/Museo-500.otf);
+}
+@font-face{
+    font-family: Museo_700;
+    src: url(../fonts/Museo-700.otf);
+}
+/*FIN TIPOGRAFÍAS*/
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+    font-family: Klavika_Light;
+	font-size: 1rem;
+}
+/*NAVEGACION*/
+h1{
+	font-family: Museo_500;
+	color: black;
+	padding-top: 1rem;
+	font-size: 2.5rem;
+}
+.nav-inicio{
+	background-image: url(../imagenes/dot-grid.png);
+}
+.navbar-brand{
+	padding-left: 2rem;
+}
+.nav-item{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-family: Klavika_Medium;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.8rem;
+	letter-spacing: 0.3rem;
+}
+.nav-link{
+	color: black !important;
+	border-bottom: solid 0.1rem transparent;
+	transition: 0.3s
+}
+.nav-link:hover{
+	border-bottom: solid 0.1rem #B23D3B;
+}
+.nav-link:active{
+	border-bottom: solid 0.1rem #B23D3B;
+}
+.dropdown-menu-rosado{
+	background-color: transparent !important;
+}
+.dropdown-item{
+	font-size: 0.75rem;
+	color: black !important;
+	border-bottom: solid 0.1rem transparent;
+	transition: 0.3s
+}
+.navbar-brand img{
+	padding-top: 2rem;
+}
+/* FIN NAVEGACION*/
+/*ESTILO HEADER*/
+header{
+	background-color: transparent;
+	background-image: url(../imagenes/dot-grid.png);
+}
+.nombre{
+	font-family: Museo_500;
+	color: black;
+	font-size: 5rem;
+	text-align: center;
+	padding-top: 9rem;
+}
+.parrafo-header{
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	color: black;
+	font-size: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	padding-bottom: 9rem;
+	text-transform: uppercase;
+}
+/* FIN ESTILO HEADER*/
+/*PROYECTOS*/
+#proyectos{
+	padding-left: 3rem;
+	padding-right: 3rem;
+	color: white;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	background-color: black;
+}
+.proyectos-img{
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+/*FIN PROYECTOS*/
+/*SOBRE MÍ*/
+#sobre-mi{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	background-image: url(../imagenes/dot-grid.png)
+}
+.parrafo-sobre-mi{
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	line-height: 2rem;
+}
+h3{
+	font-family: Klavika_Regular;
+	font-size: 1.5rem;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+.h3-hobbies{
+	margin: 0;
+}
+.graficos{
+	padding: 3rem;
+	text-align: center !important;
+}
+.progress{
+	height: 1.5rem;
+	font-size: 1rem;
+	background-color: transparent;
+	border: 0.1rem solid #1d1d1b;
+	margin-bottom: 2rem;
+	border-radius: 0;
+}
+.progress-bar{
+	background-color: #1d1d1b;
+}
+.etiqueta{
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+.margen-barras{
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+.parrafo-hobbies{
+	padding: 1rem;
+}
+/*FIN NOSOTRAS*/
+/*CONTACTO*/
+#contacto{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+.contacto-titulo{
+	text-align: left;
+	font-family: Museo_700;
+	font-size: 3.5rem;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 1rem;
+}
+.h_contacto{
+	color: black;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.parrafo-contacto{
+	color: black;
+	letter-spacing: 0.1rem;
+	font-size: 1.5rem;
+}
+.formulario-item{
+	background: transparent !important;
+    border: 0.25rem solid black;
+	border-radius: 0;
+}
+.formulario-item active{
+	border: 0.25rem solid black !important;
+}
+textarea{
+	height: 10rem;
+}
+.form-control{
+	color: black !important;
+	text-transform: uppercase;
+}
+.form-control::-webkit-input-placeholder { color: black; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: black; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: black; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: black; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: black; }  /* Microsoft Edge */
+.btn-contacto{
+	background: black !important;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	border-radius: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border: 0.25rem solid black !important;
+	color: white;
+}
+.btn-contacto:hover{
+	background: transparent !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	border-radius: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: black;
+}
+#btnEnviarConsulta{
+	color: white;
+}
+#btnEnviarConsulta:hover{
+	color: black;
+}
+/*FIN CONTACTO*/
+/*FOOTER*/
+footer{
+	background-color: black;
+	color: white;
+	padding: 3rem;
+}
+.footer-titulo{
+	font-family: Museo_500;
+	font-size: 2.5rem;
+	color: white;
+	padding-top: 1rem;
+}
+.espacio_footer{
+	padding: 3rem;
+}
+/*FIN FOOTER*/
+/*ESTILOS DE TEXTO*/
+.margen-proyecto{
+	margin-top: 0 !important;
+}
+h2{
+	text-align: center;
+	font-family: Klavika_Regular;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	padding-bottom: 2rem;
+	font-size: 2.5rem;
+	margin-top: 3rem;
+}
+.h2-proyecto{
+	margin-top: 5rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	font-size: 2rem;
+	font-family: Museo_500;
+	text-transform: none;
+	letter-spacing: normal;
+}
+.parrafo-proyecto{
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	padding-top: 1rem;
+	line-height: 2rem;
+	text-align: center;
+}
+/*FIN ESTILOS DE TEXTO*/
+
+/* EFECTO HOVER IMAGENES */
+
+/*FONDO NEGRO*/
+.cotenedor-negro {
+	position: relative;
+  }
+.image-negro {
+	opacity: 0.5 !important;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+  .middle-negro {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  .cotenedor-negro:hover .image-negro {
+	opacity: 1 !important;
+  }
+  .cotenedor-negro:hover .middle-negro {
+	opacity: 1;
+  }
+/*FONDO NEGRO*/
+.cotenedor {
+	position: relative;
+  }
+.image {
+	opacity: 1 !important;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+  .middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  .cotenedor:hover .image {
+	opacity: 0.5 !important;
+  }
+  .cotenedor:hover .middle {
+	opacity: 1;
+  }
+  /*FONDO NEGRO*/
+
+  .text {
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+  }
+  .btn-imagen{
+	  text-decoration: none !important;
+  }
+/* FIN EFECTO HOVER IMAGENES */
+/* imagenes del portafolio */
+.img-proyecto{
+	width: 100%;
+	padding: 2rem;
+}
+/* FIN imagenes del portafolio */
+/* EDITORIAL */
+.proyecto-layout{
+	padding: 3rem;
+	background-image: url(../imagenes/dot-grid.png);
+}
+.btn-volver{
+	background: black !important;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	border-radius: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border: 0.25rem solid black !important;
+	color: white;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.btn-volver:hover{
+	background: transparent !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	border-radius: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: black;
+}
+/* FIN EDITORIAL */
+/*ANIMACION HEADER*/
+.miclase{
+	font-family: Klavika_Bold !important;
+}
+/*ANIMACION HEADER*/
+.showSweetAlert{
+	
+	border-radius: 0 !important;
+}
+.showSweetAlert h2{
+	font-family: Museo_500 !important;
+	letter-spacing: normal;
+	color: black !important;
+}
+.showSweetAlert p{
+	font-family: Klavika_Light !important;
+	color: black !important;
+	letter-spacing: 0.1rem !important;
+	font-size: 1rem !important;
+}
+.sa-success{
+	color: black !important;
+}
+.confirm{
+	background: black !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.3rem !important;
+	border-radius: 0 !important;
+	padding-left: 3rem !important;
+	padding-right: 3rem !important;
+	border: 0.25rem solid black !important;
+	color: white !important;
+	font-family: Klavika_Light !important;
+}
